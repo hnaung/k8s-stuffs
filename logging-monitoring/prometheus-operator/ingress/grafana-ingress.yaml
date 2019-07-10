@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: grafana-ingress
+  namespace: logging-monitoring
+  annotations:
+    kubernetes.io/ingress.class:  private-lb
+spec:
+  rules:
+  - host: grafana.staging.thegourmetplus.net
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: prometheus-grafana
+          servicePort: 80

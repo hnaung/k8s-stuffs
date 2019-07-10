@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: prometheus
+  namespace: logging-monitoring
+  annotations:
+    kubernetes.io/ingress.class:  private-lb
+spec:
+  rules:
+  - host: prometheus.staging.thegourmetplus.net
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: prometheus-prometheus-oper-prometheus
+          servicePort: 9090

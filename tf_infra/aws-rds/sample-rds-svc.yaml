@@ -1,0 +1,7 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: rds-mysql
+spec:
+  type: ExternalName
+  externalName: ${RDS_ENDPOINT}
