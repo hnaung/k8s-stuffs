@@ -1,0 +1,5 @@
+#iam_group:iam_account:jx_team/environmentgroup:k8s_role
+#iam_group need to match with k8s_role
+aiq-web:aiq-web-view:aiq-web:view
+aiq-web-admin:aiq-web-admin:aiq-web:admin
+
