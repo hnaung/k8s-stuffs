@@ -32,7 +32,7 @@ module "vpc" {
     Name = "staging-vpc-privatesubnet"
   }
   tags = {
-    Owner       = "gplus"
+    Owner       = "xxxx"
     Environment = "staging"
   }
 

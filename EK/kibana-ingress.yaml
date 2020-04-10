@@ -3,13 +3,13 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: private-lb
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:ap-southeast-2:358896902588:certificate/7f431878-f1ca-4bd3-8616-a2051687ed5b
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:ap-southeast-2:xxxx:certificate/xxxx
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
   name: kibana-ingress
   namespace: ek-stack
 spec:
   rules:
-  - host: kibana.staging.thegourmetplus.net
+  - host: kibana.staging.example.net
     http:
       paths:
       - backend:

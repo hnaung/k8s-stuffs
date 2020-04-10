@@ -2,22 +2,22 @@ apiVersion: eksctl.io/v1alpha4
 kind: ClusterConfig
 
 metadata:
-  name: gplus-staging-eks
+  name: staging-eks
   region: ap-southeast-2
 
 vpc:
-  id: "vpc-06e5149bcdff1915e"
+  id: "vpc-xxxx"
   cidr: "192.168.0.0/16"
   subnets:
     public:
-      ap-southeast-2a: {id: "subnet-07e9c61e1084ed65d"}
-      ap-southeast-2b: {id: "subnet-0bd1c570d1d40abe6"}
-      ap-southeast-2c: {id: "subnet-0c2f707a4abe714f0"}
+      ap-southeast-2a: {id: "subnet-xxxx"}
+      ap-southeast-2b: {id: "subnet-xxxx"}
+      ap-southeast-2c: {id: "subnet-xxxx"}
   
     private:
-      ap-southeast-2a: {id: "subnet-0cabb39fb233fe294"}
-      ap-southeast-2b: {id: "subnet-04b72ddb39274f3dd"}
-      ap-southeast-2c: {id: "subnet-0556fe9b4ea62f402"}
+      ap-southeast-2a: {id: "subnet-xxxx"}
+      ap-southeast-2b: {id: "subnet-xxxx"}
+      ap-southeast-2c: {id: "subnet-xxxx"}
 
 nodeGroups:
   - name: staging-t3-meduim
@@ -29,7 +29,7 @@ nodeGroups:
     volumeSize: 30
     volumeType: gp2
     allowSSH: true
-    sshPublicKeyPath: 'gplus-aws'
+    sshPublicKeyPath: 'aws-staging-key'
     iam:
       withAddonPolicies:
         imageBuilder: true

@@ -7,18 +7,18 @@ variable "db_instance" {
 }
 
 variable "rds_subnet1" {
-  default = "subnet-014d9aeecd49010d4"
+  default = "subnet-xxxx"
 }
 
 variable "rds_subnet2" {
-  default = "subnet-0289b469af699ca4c"
+  default = "subnet-xxxx"
 }
 
 variable "rds_subnet3" {
-  default = "subnet-0861d68941e76360b"
+  default = "subnet-xxxx"
 }
 variable "vpc_id" {
-  default = "vpc-0dd6d3d2ffd7cffaf"
+  default = "vpc-xxxx"
 }
 
 variable "allocated_storage" {
@@ -33,7 +33,7 @@ variable "db_username" {
 
 variable "db_password" {
   description = "Password for the master DB user. Leave empty to generate."
-  default     = "gplus-prod2020"
+  default     = "prod2020"
 }
 
 variable "db_name" {

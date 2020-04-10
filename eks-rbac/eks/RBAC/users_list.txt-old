@@ -1,8 +1,0 @@
-#iam_group:iam_account:jx_team/environmentgroup:k8s_role
-#iam_group need to match with k8s_role
-web1user:vinc-test32:aiqweb:view
-web1admin:vinc-test33:aiqweb:admin
-visionuser:vinc-test34:aiqvision:view
-visionadmin:vinc-test35:aiqvision:admin
-ops:vinc-testops3:default:cluster-admin
-visionadmin:vinc-test36:aiqvision:admin

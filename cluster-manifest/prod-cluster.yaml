@@ -2,22 +2,22 @@ apiVersion: eksctl.io/v1alpha4
 kind: ClusterConfig
 
 metadata:
-  name: gplus-prod-eks
+  name: prod-eks
   region: ap-southeast-2
 
 vpc:
-  id: "vpc-0dd6d3d2ffd7cffaf"
+  id: "vpc-xxxx"
   cidr: "172.31.0.0/16"
   subnets:
     public:
-      ap-southeast-2a: {id: "subnet-0528febfb503d0545"}
-      ap-southeast-2b: {id: "subnet-05c26e19730a4533d"}
-      ap-southeast-2c: {id: "subnet-07c93ba3c46325c70"}
+      ap-southeast-2a: {id: "subnet-xxxx"}
+      ap-southeast-2b: {id: "subnet-xxxx"}
+      ap-southeast-2c: {id: "subnet-xxxx"}
   
     private:
-      ap-southeast-2a: {id: "subnet-014d9aeecd49010d4"}
-      ap-southeast-2b: {id: "subnet-0289b469af699ca4c"}
-      ap-southeast-2c: {id: "subnet-0861d68941e76360b"}
+      ap-southeast-2a: {id: "subnet-xxxx"}
+      ap-southeast-2b: {id: "subnet-xxxx"}
+      ap-southeast-2c: {id: "subnet-xxxx"}
 
 nodeGroups:
   - name: prod-t3-meduim
@@ -29,7 +29,7 @@ nodeGroups:
     volumeSize: 30
     volumeType: gp2
     allowSSH: true
-    sshPublicKeyPath: 'gplus-aws'
+    sshPublicKeyPath: 'aws-key'
     iam:
       withAddonPolicies:
         imageBuilder: true
