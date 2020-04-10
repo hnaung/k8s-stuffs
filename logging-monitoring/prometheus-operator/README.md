@@ -63,7 +63,7 @@ ingress.extensions/prometheus-ingress created
 ```
 kubectl get ing --namespace logging-monitoring                       
 NAME                   HOSTS                                     ADDRESS         PORTS   AGE
-alertmanager-ingress   alertmanager.staging.thegourmetplus.net   52.63.148.152   80,443      48m
-grafana-ingress        grafana.staging.thegourmetplus.net        52.63.148.152   80,443      66m
-prometheus-ingress     prometheus.staging.thegourmetplus.net     52.63.148.152   80,443      64m
+alertmanager-ingress   alertmanager.staging.example.net   xx.xx.xx.xx   80,443      48m
+grafana-ingress        grafana.staging.example.net        xx.xx.xx.xx   80,443      66m
+prometheus-ingress     prometheus.staging.example.net     xx.xx.xx.xx   80,443      64m
 ```
