@@ -10,11 +10,11 @@ You can update your environment variables in the [deployment config](./es-deploy
 ```
         env:
           - name: node.name
-            value: gplus-es
+            value: es
           - name: cluster.name
-            value: gplus-escluster
+            value: escluster
           - name: cluster.initial_master_nodes
-            value: gplus-es
+            value: es
           - name: ES_JAVA_OPTS
             value: "-Xms1g -Xmx1g"
 ```

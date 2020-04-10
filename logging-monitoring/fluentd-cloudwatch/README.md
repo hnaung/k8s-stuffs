@@ -4,7 +4,7 @@ A CloudWatch log group combines log streams that share the same retention, monit
 
 Create a CloudWatch log group:
 ```
-aws logs create-log-group --log-group-name gplus-staging-eks
+aws logs create-log-group --log-group-name staging-eks
 ```
 ### Deploy Fluentd
 
@@ -28,7 +28,7 @@ Fluentd log group name and stream name are configured in the file `fluentd-confi
         num_threads 8
       </match>
 ```
-It uses the default log group name of `gplus-staging-eks` and the log stream name of `k8s-pods`.
+It uses the default log group name of `staging-eks` and the log stream name of `k8s-pods`.
 
 If you've followed the instructions in this chapter as is, then no change is required in this configuration file. However if a different log group name is used in the previous command or a different log stream name is needed, then that needs to be configured in this configuration file.
 
@@ -102,7 +102,7 @@ Create an IAM policy name with "fluentd-cloudwatch" as follow.
     ]
 }
 ```
-Then attach this policy to the Worker Node IAM Roles (`eksctl-gplus-staging-eks-nodegroup-NodeInstanceRole-XXXXXX`).
+Then attach this policy to the Worker Node IAM Roles (`eksctl-staging-eks-nodegroup-NodeInstanceRole-XXXXXX`).
 
 ## Create Kubernetes resources
 
@@ -138,7 +138,7 @@ Watch for all of the pods to change to running status:
 
 Remember, Fluentd is deployed as a DaemonSet, i.e. one pod per worker node, so your output will vary depending on the size of your cluster. In our case, a 2 node cluster is used and so 2 pods are shown in the output.
 
-We can now login to the AWS console -> Management Tools -> CloudWatch -> Logs -> gplus-staging-eks -> k8s-pods
+We can now login to the AWS console -> Management Tools -> CloudWatch -> Logs -> staging-eks -> k8s-pods
 
 We should start to see logs arrive into the service and can use the search feature to looks for specific logs. 
 

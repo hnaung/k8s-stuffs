@@ -1,4 +1,4 @@
-# GPLUS AWS VPC
+# AWS VPC
 
 There have two directories, name with `production` & `staging` for VPCs. 
 

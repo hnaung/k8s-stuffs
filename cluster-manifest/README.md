@@ -103,7 +103,7 @@ env:
 
 $AWS_REGION = your aws region (ap-southeast-2)
 
-$EKS_CLUSTER_NAME = your cluster name (gplus-cluster)
+$EKS_CLUSTER_NAME = your cluster name (eks-cluster)
 
 Once cluster is running, you will need to install [cluster autoscaler][] itself. This flag also sets `k8s.io/cluster-autoscaler/enabled`
 and `k8s.io/cluster-autoscaler/<clusterName>` tags, so nodegroup discovery should work.
