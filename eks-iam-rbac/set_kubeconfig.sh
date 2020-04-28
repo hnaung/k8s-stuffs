@@ -1,5 +1,5 @@
 #!/bin/bash
-### Maintainer - Htet Naing Aung (aung.naing@gourmetplus.com)
+# Maintainer - Htet Naing Aung (unixaung@gmail.com)
 # This is run on the team members' machines, please export/set their AWS credentials first
 
 if ! aws --version > /dev/null 2>&1; then 
