@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 # This script is ran on the admin machine
-# Maintainer - Htet Naing Aung(aung.naing@gourmetplus.com)
+# Maintainer - Htet Naing Aung(unixaung@gmail.com)
 if ! aws --version > /dev/null 2>&1; then 
     echo "Please install AWS command line first ";
     exit
